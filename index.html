@@ -61,12 +61,14 @@
         position: relative;
         background-color: #0c0c0c;
         height: 85vh;
+        z-index: -10;
     }
     /* Having trouble to make bg-opacity : 0.1 */
     .bg-image{
         background-image: url(./assets/images/image\ 2updatedgrid.png);
         background-position: center;
         background-size: cover;
+        /* background-color: #0c0c0c; */
     }
     #header .container{
         padding-top: 90px;
@@ -88,8 +90,12 @@
         padding: 15px 20px;
     }
     /* middle */
-    #middle .container {
+    /* #middle .container {
         height: 70vh;
+    } */
+    #main-image{
+        z-index:10 ;
+        margin-top: -40vh;
     }
     .brand-p{
         font-size: 1.1rem;
@@ -116,8 +122,11 @@
     .header-left h1{
         font-size: 2rem;
     }
-    #middle .container {
+    /* #middle .container {
         height: 45vh;
+    } */
+    #main-image{
+        margin-top: -20vh;
     }
 
   }
@@ -159,8 +168,9 @@
         </div>
     </nav>
 
+    <main style="position: relative;">
     <!-- Header Details -->
-    <main id="header" class="bg-image">
+    <section id="header" class="bg-image">
         <div class="container">
             <div class="row px-2">
                 <!-- Left Side -->
@@ -190,14 +200,23 @@
                 </div>
 
             </div>
-            <div class="row px-4 my-5 main-image">
+            <!-- <div class="row px-4 my-5 main-image">
                 <img 
                 class="img-fluid mx-auto my-auto shadow-lg"
                 src="./assets/images/PZFqc3ii5y7z.png" />
-             </div>
+             </div> -->
        
         </div>
-    </main>
+    </section>
+
+    <!-- main image -->
+    <section id="main-image" class="container"> 
+        <div class="row px-4 my-5 shadow-lg">
+            <img 
+            class="img-fluid shadow-lg mx-auto"
+            src="./assets/images/PZFqc3ii5y7z.png" />
+        </div>
+    </section>
 
     <!-- Brands List -->
     <section id="middle">
@@ -230,6 +249,8 @@
             </div>
         </div>
     </section>
+
+    </main>
 
     <!-- mobilecard -->
     <section id="mobilecard">
