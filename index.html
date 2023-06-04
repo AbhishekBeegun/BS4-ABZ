@@ -72,14 +72,14 @@
     /* Having trouble to make bg-opacity : 0.1 || could not find exact image */
     .bg-image{
         background-image: var(--bg-header-img);
-        background-position: center;
+        background-position: fixed;
         background-size: cover;
     }
     #header .container{
         padding-top: 90px;
     }
     .header-left p {
-        font-size: 1rem;
+        font-size:0.9rem;
         color:#464646 ;
     }
     .header-left h1{
@@ -101,13 +101,15 @@
     }
     .brand-p{
         font-size: 1.1rem;
+        font-weight: 600;
     }
     /* mobilecard */
     .card-body h6 {
         color: var(--primary);
+        font-size: 0.8rem;
     }
     .card-body p, a{
-        font-size: 0.7rem;
+        font-size: 0.6rem;
     }
     /* transitions */
     .scaleup:hover{
@@ -188,7 +190,7 @@
         <div class="container">
             <div class="row px-2">
                 <!--Header Left Side -->
-                <div class="col-md-7 header-left py-md-4">
+                <div class="col-md-8 header-left py-md-4">
                     <p class="text-uppercase text-muted">
                     introducing the latest innovation
                     </p>
@@ -199,7 +201,7 @@
                 </div>
 
                 <!--header Right Side -->
-                <div class="col-md-5 header-right py-4">
+                <div class="col-md-4 header-right py-4">
                     <p>
                     Fore is a service for creating all your mockup<br>
                     needs. you just drag and drop and the<br>
