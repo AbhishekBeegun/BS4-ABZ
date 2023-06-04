@@ -9,19 +9,19 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="./assets/svg/logo.svg">
-    <title>ABZ Global Abhishek Front-End Test</title>
+    <title>Abhishek Front-End Test</title>
+    <description>ABZ Global Front-End Test</description>
 
     <style>
     @font-face {
         font-family: Avalon;
         src: url(./assets/font/FontsFree-Net-Avalon.ttf);
     }
-
     :root{
         --primary : #055ff8;
         --secondary : #0c0c0c;
         --button-get-app : #272727;
-        --bg-header-img : url(./assets/images/blackgrid.png)
+        --bg-header-img : url(./assets/images/blackgrid.webp)
         }
     body{
         font-family: Avalon;
@@ -104,12 +104,12 @@
         font-weight: 600;
     }
     /* mobilecard */
-    .card-body h6 {
+    .card-body h2 {
         color: var(--primary);
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
     .card-body p, a{
-        font-size: 0.6rem;
+        font-size: 0.8rem;
     }
     /* transitions */
     .scaleup:hover{
@@ -151,8 +151,8 @@
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark border border-dark border-top-0 border-right-0 border-left-0">
-        <a class="navbar-brand mx-2" href="#">
-            <img class="scaleup" src="./assets/svg/logo.svg" width="30" />
+        <a class="navbar-brand mx-2" title="Home" href="#">
+            <img class="scaleup" src="./assets/svg/logo.svg" width="30" height="30" alt="Logo" />
         </a>
         <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -196,7 +196,7 @@
                     </p>
 
                     <h1>
-                    Create all your product<br>mockups <span class="font-weight-bolder onhover">easily <img src="./assets/svg/gem-solid.svg" /></span>
+                    Create all your product<br>mockups <span class="font-weight-bolder onhover">easily <img width="25" height="25" src="./assets/svg/gem-solid.svg" alt="gem-solid" /></span>
                     </h1>
                 </div>
 
@@ -209,7 +209,7 @@
                     </p>
 
                     <div class="py-4 right-side-button">
-                        <button class="btn btn-primary scaleup">Try for Free <span><img src="./assets/svg/arrow-trend-up-solid.svg" /></span>
+                        <button class="btn btn-primary scaleup">Try for Free <span><img width="25" height="25" src="./assets/svg/arrow-trend-up-solid.svg" alt="Rise" /></span>
                         </button>
                         <button class="btn btn-secondary scaleup">Get app</button>
                     </div>
@@ -223,7 +223,8 @@
         <div class="row px-4 my-5">
             <img 
             class="img-fluid shadow-lg mx-auto"
-            src="./assets/images/PZFqc3ii5y7z.png" />
+            src="./assets/images/PZFqc3ii5y7z.webp"
+            alt="main-image" />
         </div>
     </section>
 
@@ -241,19 +242,24 @@
             <div class="row px-2 d-flex flex-wrap justify-content-center align-items-center">
                     <img 
                     class="img-fluid col-4 col-lg"
-                    src="./assets/svg/dropbox.svg"/>
+                    src="./assets/svg/dropbox.svg"
+                    alt="dropbox"/>
                     <img
                     class="img-fluid col-4 col-lg"
-                    src="./assets/svg/fiverr-2.svg"/>
+                    src="./assets/svg/fiverr-2.svg"
+                    alt="fiverr"/>
                     <img
                     class="img-fluid col-4 col-lg"
-                    src="./assets/svg/squarespace-seeklogo.com.svg">
+                    src="./assets/svg/squarespace-seeklogo.com.svg"
+                    alt="sqpace">
                     <img 
                     class="img-fluid col-4 col-lg"
-                    src="./assets/svg/bolt.svg"/>
+                    src="./assets/svg/bolt.svg"
+                    alt="bolt"/>
                     <img
                     class="img-fluid col-4 col-lg"
-                    src="./assets/svg/microsoft.svg"/>
+                    src="./assets/svg/microsoft.svg"
+                    alt="microsoft"/>
                 
             </div>
         </div>
@@ -267,7 +273,7 @@
             <div class="col">
                 <div class="card shadow-lg">
                     <div class="card-body">
-                        <h6 class="card-title font-weight-bold">🙂 Easy to use app</h6>
+                        <h2 class="card-title font-weight-bold">🙂 Easy to use app</h2>
                         <p class="card-text">You just need to drag and drop to create your mockup needs. All settings available in one app.</p>
                         <a href="#readmore" class="card-link font-weight-bold text-dark">Read more<span class="px-2"><img src="./assets/svg/expand-alt-solid.svg" /></span></a>
                     </div>
