@@ -29,9 +29,6 @@
     body::-webkit-scrollbar{
         display: none;
     }
-    #mobilecard{
-    display: none;
-    }
     .btn-primary{
         background-color: var(--primary);
         border-radius:10px;
@@ -46,24 +43,33 @@
         font-weight: 600;
 
     }
+    #mobilecard{
+    display: none;
+    }
+    /* navbar */
     .navbar{
         background-color: var(--secondary);
         padding : 10px 200px
     }
     .navbar-nav li a{
+        font-size: 1rem;
         font-weight: 600;
     }
-    .nav-seperator{
-    opacity: 1;
-    color: white;
-    width: 1;
+    /* navbar seperator */
+    .navbar-nav > li > a::after {
+    content: '|';
+    opacity: 0.2;
+    padding-left: 15px;
+    }
+    .navbar-nav > li:last-child > a::after {
+    content: none;
     }
     /* header */
     #header{
         background-color: var(--secondary);
         height: 85vh;
     }
-    /* Having trouble to make bg-opacity : 0.1 */
+    /* Having trouble to make bg-opacity : 0.1 || could not find exact image */
     .bg-image{
         background-image: var(--bg-header-img);
         background-position: center;
@@ -88,6 +94,7 @@
     .right-side-button button{
         padding: 15px 20px;
     }
+    /* middle */
     #main-image{
         z-index: 10 ;
         margin-top: -40vh;
@@ -95,12 +102,14 @@
     .brand-p{
         font-size: 1.1rem;
     }
+    /* mobilecard */
     .card-body h6 {
         color: var(--primary);
     }
     .card-body p, a{
         font-size: 0.7rem;
     }
+    /* transitions */
     .scaleup:hover{
         scale: 1.1;
         transition: all ease-in-out 200ms;
@@ -116,6 +125,10 @@
     }
     .navbar{
         padding: 10px 20px;
+    }
+    .navbar-nav > li > a::after {
+        content: none;
+        padding-left:0;
     }
     .header-left h1{
         font-size: 2rem;
